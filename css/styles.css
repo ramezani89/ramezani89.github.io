@@ -7617,7 +7617,7 @@ button.bg-black:focus {
 }
 
 .min-vh-100 {
-  min-height: 100vh !important;
+  min-height: 100% !important;
 }
 
 .vw-100 {
