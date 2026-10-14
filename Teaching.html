@@ -1,78 +1,420 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
-    <link href="css/styles.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Font Awesome icons (free version) -->
-    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+    <title>Teaching | Dr. Maryam Ramezani Ziarani</title>
+
+    <!-- Existing website CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script
+        src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
+        crossorigin="anonymous">
+    </script>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800"
+        rel="stylesheet">
+
+    <style>
+        /* Teaching section */
+        .teaching-section {
+            background-color: #ffffff;
+            padding: 65px 0 90px;
+            min-height: 60vh;
+        }
+
+        .teaching-container {
+            max-width: 1050px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+
+        .teaching-heading {
+            color: #333333;
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 35px;
+        }
+
+        .teaching-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .teaching-item {
+            padding: 22px 0;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .teaching-item:last-child {
+            border-bottom: none;
+        }
+
+        .teaching-item .Title {
+            display: block;
+            font-size: 18px;
+            font-weight: 700;
+            color: #333333;
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+
+        .teaching-item .Details {
+            display: block;
+            font-size: 15px;
+            color: #555555;
+            line-height: 1.7;
+            margin-bottom: 5px;
+        }
+
+        .teaching-item .Semester {
+            display: block;
+            font-size: 14px;
+            color: #777777;
+            margin-top: 5px;
+        }
+
+        .teaching-item a {
+            color: #64a19d;
+            text-decoration: none;
+        }
+
+        .teaching-item a:hover {
+            color: #467c78;
+            text-decoration: underline;
+        }
+
+        /* Existing starry header */
+        .publication_Maryam {
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .teaching-container {
+                padding: 0 20px;
+            }
+
+            .teaching-heading {
+                font-size: 25px;
+            }
+
+            .teaching-item .Title {
+                font-size: 17px;
+            }
+        }
+    </style>
 </head>
 
 <body id="page-top">
 
-    <header class="publication_Maryam"></header>
-
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <nav
+        class="navbar navbar-expand-lg navbar-light fixed-top"
+        id="mainNav">
+
         <div class="container">
 
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <!-- Name: KU link removed -->
+            <a
+                class="navbar-brand js-scroll-trigger"
+                href="#page-top">
                 Dr. Maryam Ramezani Ziarani
             </a>
 
+            <!-- Social media -->
             <div class="social d-flex justify-content-center">
 
-                
-                <a class="mx-2" href="https://scholar.google.com/citations?user=IpyjRMAAAAAJ&hl=en"><i class="fab fa-google"></i></a>
-                    <a class="mx-2" href="https://orcid.org/0000-0002-8730-3762"><i class="fab fa-orcid"></i></a>
-                    <a class="mx-2" href="https://twitter.com/MaryamRamezanii"><i class="fab fa-twitter"></i></a>
-                    <a class="mx-2" href="https://www.researchgate.net/profile/Maryam-Ramezani-Ziarani"><i class="fab fa-researchgate"></i></a>
+                <a class="mx-2"
+                   href="https://scholar.google.com/citations?user=IpyjRMAAAAAJ&hl=en"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <i class="fab fa-google"></i>
+                </a>
+
+                <a class="mx-2"
+                   href="https://orcid.org/0000-0002-8730-3762"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <i class="fab fa-orcid"></i>
+                </a>
+
+                <a class="mx-2"
+                   href="https://twitter.com/MaryamRamezanii"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <i class="fab fa-twitter"></i>
+                </a>
+
+                <a class="mx-2"
+                   href="https://www.researchgate.net/profile/Maryam-Ramezani-Ziarani"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <i class="fab fa-researchgate"></i>
+                </a>
+
             </div>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+
+            <!-- Mobile menu -->
+            <button
+                class="navbar-toggler navbar-toggler-right"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarResponsive"
+                aria-controls="navbarResponsive"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
                 Menu
                 <i class="fas fa-bars"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
+
+            <!-- Navigation links -->
+            <div
+                class="collapse navbar-collapse"
+                id="navbarResponsive">
+
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="pub_test.html">Publications</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Teaching.html">Teachings</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">Contact</a></li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="pub_test.html">
+                            Publications
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="Teaching.html">
+                            Teachings
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">
+                            Contact
+                        </a>
+                    </li>
+
                 </ul>
             </div>
+
         </div>
     </nav>
-            <!-- for items we need ol li comments-->
-   
-         
 
-    <ul>
+    <!-- Original starry header -->
+    <header class="publication_Maryam"></header>
 
-        <li> 
-    <dd class="Pub">
-         <dd class="text-white-50"> 
-            <span class="Title">Mathematical Programming (3SWS lecture + exercise) at the <a href="https://www.ku.de/">Catholic University of Eichstätt-Ingolstadt</a>, Summer semester 2023.</span><br />
-             <span class="Title">Introduction to Programming (4SWS lecture) at the <a href="https://www.ku.de/">Catholic University of Eichstätt-Ingolstadt</a>, 2023-2024.</span><br />
-             <span class="Title">Introduction to Programming (4SWS exercise) at the <a href="https://www.ku.de/">Catholic University of Eichstätt-Ingolstadt</a>, 2023-2024.</span><br />
-             <span class="Title">Supervision of Data Lab projects (2SWS) at the <a href="https://www.ku.de/">Catholic University of Eichstätt-Ingolstadt</a>, Summer semester 2024.</span><br />
-             <span class="Title">Introduction to Programming (4SWS lecture) at the <a href="https://www.ku.de/">Catholic University of Eichstätt-Ingolstadt</a>, 2024-2025.</span><br />
-             <span class="Title">Introduction to Programming (4SWS exercise) at the <a href="https://www.ku.de/">Catholic University of Eichstätt-Ingolstadt</a>, 2024-2025.</span><br />
-             <span class="Title"> Introduction to data assimilation (1SWS) at the <a href="https://www.ku.de/">Catholic University of Eichstätt-Ingolstadt</a>, Summer semester 2025.</span><br />
-    
-            <span class="Author"><span style="color:orange"></span><br />
-            <span class="Journal"></span>&nbsp;
-            <span class="Date"></span><br />
-            <div class="Abstract"></div>
-         </dd>
-        </dl>
-         </div> 
-        </li>    
-           
-        <li> 
+    <!-- Teaching section -->
+    <section class="teaching-section">
 
+        <div class="teaching-container">
+
+            <h1 class="teaching-heading">
+                Teaching Experience
+            </h1>
+
+            <ul class="teaching-list">
+
+                <!-- Teaching 1 -->
+                <li class="teaching-item">
+
+                    <span class="Title">
+                        Mathematical Programming
+                    </span>
+
+                    <span class="Details">
+                        3 SWS — Lecture and Exercise
+                    </span>
+
+                    <span class="Details">
+                        <a href="https://www.ku.de/"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Catholic University of Eichstätt-Ingolstadt
+                        </a>
+                    </span>
+
+                    <span class="Semester">
+                        Summer Semester 2023
+                    </span>
+
+                </li>
+
+                <!-- Teaching 2 -->
+                <li class="teaching-item">
+
+                    <span class="Title">
+                        Introduction to Programming
+                    </span>
+
+                    <span class="Details">
+                        4 SWS — Lecture
+                    </span>
+
+                    <span class="Details">
+                        <a href="https://www.ku.de/"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Catholic University of Eichstätt-Ingolstadt
+                        </a>
+                    </span>
+
+                    <span class="Semester">
+                        Academic Year 2023–2024
+                    </span>
+
+                </li>
+
+                <!-- Teaching 3 -->
+                <li class="teaching-item">
+
+                    <span class="Title">
+                        Introduction to Programming
+                    </span>
+
+                    <span class="Details">
+                        4 SWS — Exercise
+                    </span>
+
+                    <span class="Details">
+                        <a href="https://www.ku.de/"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Catholic University of Eichstätt-Ingolstadt
+                        </a>
+                    </span>
+
+                    <span class="Semester">
+                        Academic Year 2023–2024
+                    </span>
+
+                </li>
+
+                <!-- Teaching 4 -->
+                <li class="teaching-item">
+
+                    <span class="Title">
+                        Supervision of Data Lab Projects
+                    </span>
+
+                    <span class="Details">
+                        2 SWS — Project Supervision
+                    </span>
+
+                    <span class="Details">
+                        <a href="https://www.ku.de/"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Catholic University of Eichstätt-Ingolstadt
+                        </a>
+                    </span>
+
+                    <span class="Semester">
+                        Summer Semester 2024
+                    </span>
+
+                </li>
+
+                <!-- Teaching 5 -->
+                <li class="teaching-item">
+
+                    <span class="Title">
+                        Introduction to Programming
+                    </span>
+
+                    <span class="Details">
+                        4 SWS — Lecture
+                    </span>
+
+                    <span class="Details">
+                        <a href="https://www.ku.de/"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Catholic University of Eichstätt-Ingolstadt
+                        </a>
+                    </span>
+
+                    <span class="Semester">
+                        Academic Year 2024–2025
+                    </span>
+
+                </li>
+
+                <!-- Teaching 6 -->
+                <li class="teaching-item">
+
+                    <span class="Title">
+                        Introduction to Programming
+                    </span>
+
+                    <span class="Details">
+                        4 SWS — Exercise
+                    </span>
+
+                    <span class="Details">
+                        <a href="https://www.ku.de/"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Catholic University of Eichstätt-Ingolstadt
+                        </a>
+                    </span>
+
+                    <span class="Semester">
+                        Academic Year 2024–2025
+                    </span>
+
+                </li>
+
+                <!-- Teaching 7 -->
+                <li class="teaching-item">
+
+                    <span class="Title">
+                        Introduction to Data Assimilation
+                    </span>
+
+                    <span class="Details">
+                        1 SWS — Course
+                    </span>
+
+                    <span class="Details">
+                        <a href="https://www.ku.de/"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Catholic University of Eichstätt-Ingolstadt
+                        </a>
+                    </span>
+
+                    <span class="Semester">
+                        Summer Semester 2025
+                    </span>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+    <!-- Bootstrap dependencies for navigation -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Existing theme JavaScript -->
+    <script src="js/scripts.js"></script>
 
 </body>
 </html>
-
-         
