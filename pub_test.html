@@ -1,193 +1,497 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="css/styles.css" rel="stylesheet" />
+    <title>Publications | Dr. Maryam Ramezani Ziarani</title>
 
-    <!-- Font Awesome icons (free version) -->
-    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Existing website CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script
+        src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
+        crossorigin="anonymous">
+    </script>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800"
+        rel="stylesheet">
+
+    <style>
+        /* Publications page */
+        .publications-section {
+            background-color: #ffffff;
+            padding: 65px 0 90px;
+            min-height: 60vh;
+        }
+
+        .publications-container {
+            max-width: 1050px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+
+        .publications-heading {
+            color: #333333;
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 35px;
+        }
+
+        .publication-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .publication-item {
+            padding: 22px 0;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .publication-item:last-child {
+            border-bottom: none;
+        }
+
+        .publication-item .Title {
+            display: block;
+            font-size: 18px;
+            font-weight: 700;
+            color: #333333;
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+
+        .publication-item .Author {
+            display: block;
+            font-size: 15px;
+            color: #555555;
+            line-height: 1.7;
+            margin-bottom: 6px;
+        }
+
+        .publication-item .Journal {
+            font-style: italic;
+            color: #444444;
+        }
+
+        .publication-item .Volume,
+        .publication-item .Pages,
+        .publication-item .Date {
+            color: #555555;
+        }
+
+        .publication-item .URL {
+            display: block;
+            margin-top: 8px;
+            overflow-wrap: anywhere;
+        }
+
+        .publication-item .URL a {
+            color: #64a19d;
+            text-decoration: none;
+        }
+
+        .publication-item .URL a:hover {
+            color: #467c78;
+            text-decoration: underline;
+        }
+
+        .publication-item strong {
+            font-weight: 700;
+            color: #333333;
+        }
+
+        /* Keep original header background */
+        .publication_Maryam {
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .publications-container {
+                padding: 0 20px;
+            }
+
+            .publications-heading {
+                font-size: 25px;
+            }
+
+            .publication-item .Title {
+                font-size: 17px;
+            }
+        }
+    </style>
 </head>
 
 <body id="page-top">
 
-    <header class="publication_Maryam">
-    </header>
-
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <nav
+        class="navbar navbar-expand-lg navbar-light fixed-top"
+        id="mainNav">
+
         <div class="container">
 
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <!-- Name: KU link removed -->
+            <a
+                class="navbar-brand js-scroll-trigger"
+                href="#page-top">
                 Dr. Maryam Ramezani Ziarani
             </a>
 
+            <!-- Social media -->
             <div class="social d-flex justify-content-center">
 
-                
-                <a class="mx-2" href="https://scholar.google.com/citations?user=IpyjRMAAAAAJ&hl=en"><i class="fab fa-google"></i></a>
-                    <a class="mx-2" href="https://orcid.org/0000-0002-8730-3762"><i class="fab fa-orcid"></i></a>
-                    <a class="mx-2" href="https://twitter.com/MaryamRamezanii"><i class="fab fa-twitter"></i></a>
-                    <a class="mx-2" href="https://www.researchgate.net/profile/Maryam-Ramezani-Ziarani"><i class="fab fa-researchgate"></i></a>
+                <a class="mx-2"
+                   href="https://scholar.google.com/citations?user=IpyjRMAAAAAJ&hl=en"
+                   target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-google"></i>
+                </a>
+
+                <a class="mx-2"
+                   href="https://orcid.org/0000-0002-8730-3762"
+                   target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-orcid"></i>
+                </a>
+
+                <a class="mx-2"
+                   href="https://twitter.com/MaryamRamezanii"
+                   target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-twitter"></i>
+                </a>
+
+                <a class="mx-2"
+                   href="https://www.researchgate.net/profile/Maryam-Ramezani-Ziarani"
+                   target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-researchgate"></i>
+                </a>
+
             </div>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+
+            <!-- Mobile menu -->
+            <button
+                class="navbar-toggler navbar-toggler-right"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarResponsive"
+                aria-controls="navbarResponsive"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
                 Menu
                 <i class="fas fa-bars"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
+
+            <!-- Navigation links -->
+            <div
+                class="collapse navbar-collapse"
+                id="navbarResponsive">
+
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="pub_test.html">Publications</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Teaching.html">Teachings</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">Contact</a></li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="pub_test.html">
+                            Publications
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="Teaching.html">
+                            Teachings
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">
+                            Contact
+                        </a>
+                    </li>
+
                 </ul>
             </div>
+
         </div>
     </nav>
- 
-    <!-- for items we need ol li comments-->
-   
-         
 
-    <ul>
-	
-<!-- Publication 1: ICON-ART (2026) -->
-<li>
-    <dd class="Pub">
-    <dd class="text-white-50">
-        <span class="Title">The atmospheric composition component of the ICON modeling framework: ICON-ART version 2025.10</span><br />
-        <span class="Author">Hoshyaripour, G. A.; Baer, A.; Bierbauer, S.; Bruckert, J.; Brunner, D.; et al. (including <strong>Ramezani Ziarani, M.</strong>)</span><br />
-        <span class="Journal">Geoscientific Model Development</span>&nbsp;
-        <span class="Volume">19</span>&nbsp;
-        <span class="Pages">1645–1681</span>&nbsp;
-        (<span class="Date">2026</span>)<br />
-        <span class="URL"><a href="https://doi.org/10.5194/gmd-19-1645-2026">https://doi.org/10.5194/gmd-19-1645-2026</a></span><br />
-        <div class="Abstract"></div>
-    </dd>
-    </dl>
-    </div>
-</li>
+    <!-- Original starry header -->
+    <header class="publication_Maryam"></header>
 
-<!-- Publication 2: SOLCHECK (2026) -->
-<li>
-    <dd class="Pub">
-    <dd class="text-white-50">
-        <span class="Title">The SOLCHECK Project: A State-of-the-Art Investigation into the Imprints of Solar Variability Across Multiple Timescales</span><br />
-        <span class="Author">Spiegl, T.; Langematz, U.; Huo, W.; Kröger, J.; Reddmann, T.; Kappenberger, F.; Wahl, S.; <strong>Ramezani Ziarani, M.</strong>; Pohlmann, H.; Sinnhuber, M.</span><br />
-        <span class="Journal">EGUsphere preprint</span>&nbsp;
-        (<span class="Date">2026</span>)<br />
-        <span class="URL"><a href="https://doi.org/10.5194/egusphere-2026-126">https://doi.org/10.5194/egusphere-2026-126</a></span><br />
-        <div class="Abstract"></div>
-    </dd>
-    </dl>
-    </div>
-</li>
-	
-	 <li> 
-            <dd class="Pub">
-       <dd class="text-white-50"> 
-           <span class="Title">Implementation of solar UV and energetic particle precipitation within the LINOZ scheme in ICON-ART</span><br />
-           <span class="Author">Ramezani Ziarani, M.; Sinnhuber, M.; Reddmann, T.; Funke, B.; Bender, S.; Prather, M</span><br />
-           <span class="Journal">Geosci. Model Dev.</span>&nbsp;
-           (<span class="Date">2025</span>)<br />
-           <span class="URL"><a href="https://doi.org/10.5194/gmd-2024-227">https://doi.org/10.5194/gmd-2024-227</a></span><br />
-           <div class="Abstract"></div>
-       </dd>
-       
-       </dl>
-       </div>
-       </li> 
+    <!-- Publications -->
+    <section class="publications-section">
 
-         <li> 
-            <dd class="Pub">
-       <dd class="text-white-50"> 
-           <span class="Title">A Model for the Relationship between Rainfall, GNSS-Derived Integrated Water Vapour, and CAPE in the Eastern Central Andes</span><br />
-           <span class="Author">Ramezani Ziarani, M.; Bookhagen, B.; Schmidt, T.; Wickert, J.; de la Torre, A.; Deng, Z.; Calori, A</span><br />
-           <span class="Journal">Remote Sens.</span>&nbsp;
-           <span class="Volume">13</span>&nbsp;
-           <span class="Pages">3788</span>&nbsp;
-           (<span class="Date">2021</span>)<br />
-           <span class="URL"><a href="https://doi.org/10.3390/rs13183788">https://doi.org/10.3390/rs13183788</a></span><br />
-           <div class="Abstract"></div>
-       </dd>
-       
-       </dl>
-       </div>
-       </li> 
-           
-        <li> 
-     <dd class="Pub">
-<dd class="text-white-50"> 
-	<span class="Title">Using Convective Available Potential Energy (CAPE) and Dew-Point Temperature to Characterize Rainfall-Extreme Events in the South-Central Andes</span><br />
-	<span class="Author">Ramezani Ziarani, M.; Bookhagen, B.; Schmidt, T.; Wickert, J.; de la Torre, A.; Hierro, R</span><br />
-	<span class="Journal">Atmosphere</span>&nbsp;
-	<span class="Volume">10</span>&nbsp;
-	<span class="Pages">379</span>&nbsp;
-	(<span class="Date">2019</span>)<br />
-	<span class="URL"><a href="https://doi.org/10.3390/atmos10070379">https://doi.org/10.3390/atmos10070379</a></span><br />
-	<div class="Abstract"></div>
-</dd>
+        <div class="publications-container">
 
-</dl>
-</div>
-</li> 
+            <h1 class="publications-heading">
+                Publications
+            </h1>
 
-<li>
+            <ul class="publication-list">
 
-    <dd class="Pub">
-        <dd class="text-white-50"> 
-            <span class="Title">On the behavior of rainfall maxima at the eastern Andes</span><br />
-            <span class="Author">Hierro, R.; Burgos Fonseca, Y.; Ramezani Ziarani, M.; Llamedo, P.; Schmidt, T.; de la Torre, A.; Alexander, P</span><br />
-            <span class="Journal">Atmospheric Research</span>&nbsp;
-            <span class="Volume">234</span>&nbsp;
-            <span class="Pages">104792</span>&nbsp;
-            (<span class="Date">2019</span>)<br />
-            <span class="URL"><a href="https://www.sciencedirect.com/science/article/pii/S0169809519310233">https://www.sciencedirect.com/science/article/pii/S0169809519310233</a></span><br />
-            <span class="URL"><a href="https://doi.org/10.1016/j.atmosres.2019.104792">https://doi.org/10.1016/j.atmosres.2019.104792</a></span><br />
-        </dd>
-        
-        </dl>
+                <!-- Publication 1 -->
+                <li class="publication-item">
+
+                    <span class="Title">
+                        The atmospheric composition component of the
+                        ICON modeling framework: ICON-ART version 2025.10
+                    </span>
+
+                    <span class="Author">
+                        Hoshyaripour, G. A.; Baer, A.; Bierbauer, S.;
+                        Bruckert, J.; Brunner, D.; et al.
+                        (including <strong>Ramezani Ziarani, M.</strong>)
+                    </span>
+
+                    <span class="Journal">
+                        Geoscientific Model Development
+                    </span>,
+                    <span class="Volume">19</span>,
+                    <span class="Pages">1645–1681</span>
+                    (<span class="Date">2026</span>)
+
+                    <span class="URL">
+                        <a href="https://doi.org/10.5194/gmd-19-1645-2026"
+                           target="_blank" rel="noopener noreferrer">
+                            https://doi.org/10.5194/gmd-19-1645-2026
+                        </a>
+                    </span>
+
+                </li>
+
+                <!-- Publication 2 -->
+                <li class="publication-item">
+
+                    <span class="Title">
+                        The SOLCHECK Project: A State-of-the-Art
+                        Investigation into the Imprints of Solar
+                        Variability Across Multiple Timescales
+                    </span>
+
+                    <span class="Author">
+                        Spiegl, T.; Langematz, U.; Huo, W.;
+                        Kröger, J.; Reddmann, T.; Kappenberger, F.;
+                        Wahl, S.;
+                        <strong>Ramezani Ziarani, M.</strong>;
+                        Pohlmann, H.; Sinnhuber, M.
+                    </span>
+
+                    <span class="Journal">
+                        EGUsphere preprint
+                    </span>
+                    (<span class="Date">2026</span>)
+
+                    <span class="URL">
+                        <a href="https://doi.org/10.5194/egusphere-2026-126"
+                           target="_blank" rel="noopener noreferrer">
+                            https://doi.org/10.5194/egusphere-2026-126
+                        </a>
+                    </span>
+
+                </li>
+
+                <!-- Publication 3 -->
+                <li class="publication-item">
+
+                    <span class="Title">
+                        Implementation of solar UV and energetic
+                        particle precipitation within the LINOZ
+                        scheme in ICON-ART
+                    </span>
+
+                    <span class="Author">
+                        <strong>Ramezani Ziarani, M.</strong>;
+                        Sinnhuber, M.; Reddmann, T.; Funke, B.;
+                        Bender, S.; Prather, M.
+                    </span>
+
+                    <span class="Journal">
+                        Geoscientific Model Development
+                    </span>
+                    (<span class="Date">2025</span>)
+
+                    <span class="URL">
+                        <a href="https://doi.org/10.5194/gmd-2024-227"
+                           target="_blank" rel="noopener noreferrer">
+                            https://doi.org/10.5194/gmd-2024-227
+                        </a>
+                    </span>
+
+                </li>
+
+                <!-- Publication 4 -->
+                <li class="publication-item">
+
+                    <span class="Title">
+                        A Model for the Relationship between Rainfall,
+                        GNSS-Derived Integrated Water Vapour, and
+                        CAPE in the Eastern Central Andes
+                    </span>
+
+                    <span class="Author">
+                        <strong>Ramezani Ziarani, M.</strong>;
+                        Bookhagen, B.; Schmidt, T.; Wickert, J.;
+                        de la Torre, A.; Deng, Z.; Calori, A.
+                    </span>
+
+                    <span class="Journal">
+                        Remote Sensing
+                    </span>,
+                    <span class="Volume">13</span>,
+                    <span class="Pages">3788</span>
+                    (<span class="Date">2021</span>)
+
+                    <span class="URL">
+                        <a href="https://doi.org/10.3390/rs13183788"
+                           target="_blank" rel="noopener noreferrer">
+                            https://doi.org/10.3390/rs13183788
+                        </a>
+                    </span>
+
+                </li>
+
+                <!-- Publication 5 -->
+                <li class="publication-item">
+
+                    <span class="Title">
+                        Using Convective Available Potential Energy
+                        (CAPE) and Dew-Point Temperature to
+                        Characterize Rainfall-Extreme Events in
+                        the South-Central Andes
+                    </span>
+
+                    <span class="Author">
+                        <strong>Ramezani Ziarani, M.</strong>;
+                        Bookhagen, B.; Schmidt, T.; Wickert, J.;
+                        de la Torre, A.; Hierro, R.
+                    </span>
+
+                    <span class="Journal">
+                        Atmosphere
+                    </span>,
+                    <span class="Volume">10</span>,
+                    <span class="Pages">379</span>
+                    (<span class="Date">2019</span>)
+
+                    <span class="URL">
+                        <a href="https://doi.org/10.3390/atmos10070379"
+                           target="_blank" rel="noopener noreferrer">
+                            https://doi.org/10.3390/atmos10070379
+                        </a>
+                    </span>
+
+                </li>
+
+                <!-- Publication 6 -->
+                <li class="publication-item">
+
+                    <span class="Title">
+                        On the behavior of rainfall maxima at
+                        the eastern Andes
+                    </span>
+
+                    <span class="Author">
+                        Hierro, R.; Burgos Fonseca, Y.;
+                        <strong>Ramezani Ziarani, M.</strong>;
+                        Llamedo, P.; Schmidt, T.;
+                        de la Torre, A.; Alexander, P.
+                    </span>
+
+                    <span class="Journal">
+                        Atmospheric Research
+                    </span>,
+                    <span class="Volume">234</span>,
+                    <span class="Pages">104792</span>
+                    (<span class="Date">2019</span>)
+
+                    <span class="URL">
+                        <a href="https://doi.org/10.1016/j.atmosres.2019.104792"
+                           target="_blank" rel="noopener noreferrer">
+                            https://doi.org/10.1016/j.atmosres.2019.104792
+                        </a>
+                    </span>
+
+                </li>
+
+                <!-- Publication 7: Doctoral Thesis -->
+                <li class="publication-item">
+
+                    <span class="Title">
+                        Characterization of atmospheric processes
+                        related to hydro-meteorological extreme
+                        events over the south-central Andes
+                    </span>
+
+                    <span class="Author">
+                        <strong>Ramezani Ziarani, M.</strong>
+                    </span>
+
+                    <span class="Journal">
+                        Doctoral Thesis, Universität Potsdam,
+                        Mathematisch-Naturwissenschaftliche Fakultät /
+                        Institut für Geowissenschaften
+                    </span>
+                    (<span class="Date">2020</span>)
+
+                    <span class="URL">
+                        <a href="https://doi.org/10.25932/publishup-47175"
+                           target="_blank" rel="noopener noreferrer">
+                            https://doi.org/10.25932/publishup-47175
+                        </a>
+                    </span>
+
+                </li>
+
+                <!-- Publication 8: Master's Thesis -->
+                <li class="publication-item">
+
+                    <span class="Title">
+                        Assessment of Medicane characteristics
+                        in reanalysis and station data
+                    </span>
+
+                    <span class="Author">
+                        <strong>Ramezani Ziarani, M.</strong>
+                    </span>
+
+                    <span class="Journal">
+                        Master Thesis, Universität Hamburg,
+                        School of Integrated Climate System
+                        Science (SICSS), Hamburg, Germany
+                    </span>
+                    (<span class="Date">2015</span>)
+
+                    <span class="URL">
+                        <a href="http://hdl.handle.net/11858/00-001M-0000-0029-71CF-B"
+                           target="_blank" rel="noopener noreferrer">
+                            http://hdl.handle.net/11858/00-001M-0000-0029-71CF-B
+                        </a>
+                    </span>
+
+                </li>
+
+            </ul>
+
         </div>
-        
-</li>
-<li> 
-    <dd class="Pub">
-         <dd class="text-white-50"> 
-            <span class="Title">Characterization of atmospheric processes related to hydro-meteorological extreme events over the south-central Andes. </span><br />
-            <span class="Author">Ramezani Ziarani, M</span><br />
-            <span class="Journal">Doctoral Thesis, Universität Potsdam, Mathematisch-Naturwissenschaftliche Fakultät / Institut für Geowissenschaften.</span>&nbsp;
-            (<span class="Date">2020</span>)<br />
-            <span class="URL"><a href="https://doi.org/10.25932/publishup-47175">https://doi.org/10.25932/publishup-47175</a></span><br /> 
-            <div class="Abstract"></div>
-         </dd>
-        </dl>
-         </div> 
-        </li>         
 
-<li> 
-    <dd class="Pub">
-         <dd class="text-white-50"> 
-            <span class="Title">Assessment of Medicane characteristics in reanalysis and station data. </span><br />
-            <span class="Author">Ramezani Ziarani, M</span><br />
-            <span class="Journal">Master Thesis, Universität Hamburg, School of Integrated Climate System Science (SICSS), Hamburg., Germany.</span>&nbsp;
-            (<span class="Date">2015</span>)<br />
-            <span class="URL"><a href="http://hdl.handle.net/11858/00-001M-0000-0029-71CF-B">http://hdl.handle.net/11858/00-001M-0000-0029-71CF-B</a></span><br /> 
-            <div class="Abstract"></div>
-         </dd>
-        </dl>
-         </div> 
-        </li>  
- 
-        
+    </section>
 
-   
-</ul> 
+    <!-- Bootstrap dependencies for navigation -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
 
-
-
+    <!-- Existing theme JavaScript -->
+    <script src="js/scripts.js"></script>
 
 </body>
 </html>
-
